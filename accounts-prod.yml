@@ -1,11 +1,37 @@
+spring:
+  application:
+    # This must be same as the name of the file naim in config directory in config server, based on active profile.
+    name: "accounts"
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ''
+    hikari:
+      allow-pool-suspension: false
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate.boot.allow_jdbc_metadata_access: false
+    open-in-view: false
+  sql:
+    init:
+      schema-locations: schema-h2.sql
+
 build:
   version: "1.0"
 
 accounts:
-  message: "Hey, welcome to EazyBank accounts related webhook APIs EDITED 11"
+  message: "Welcome to EazyBank accounts related prod APIs "
   contactDetails:
     name: "Reine Aishwarya - Product Owner"
-    email: "{cipher}f83ac5a34ba5f4657ae8e863c063c1b69efb4d23d0c431eb134f8d1b3ed0823dee0a4b627d091455b4c6600353a3682c"
+    email: "aishwarya@eazybank.com"
   onCallSupport:
     - (453) 392-4829
     - (236) 203-0384
