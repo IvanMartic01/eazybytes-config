@@ -1,7 +1,4 @@
 spring:
-  application:
-    # This must be same as the name of the file naim in config directory in config server, based on active profile.
-    name: "accounts"
   datasource:
     url: jdbc:h2:mem:testdb
     driverClassName: org.h2.Driver
@@ -22,7 +19,7 @@ spring:
     open-in-view: false
   sql:
     init:
-      schema-locations: schema-h2.sql
+      schema-locations: classpath:schema-h2.sql
 
 build:
   version: "1.0"
