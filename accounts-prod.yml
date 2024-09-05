@@ -1,16 +1,13 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:testdb
-    driverClassName: org.h2.Driver
-    username: sa
-    password: ''
+    url: jdbc:postgresql://localhost:5433/testdb1
+    driverClassName: org.postgresql.Driver
+    username: admin
+    password: admin
     hikari:
       allow-pool-suspension: false
-  h2:
-    console:
-      enabled: true
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
     show-sql: true
@@ -19,7 +16,8 @@ spring:
     open-in-view: false
   sql:
     init:
-      schema-locations: classpath:schema-h2.sql
+      schema-locations: classpath:schema-postgres.sql
+
 
 build:
   version: "1.0"
