@@ -2,8 +2,8 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5433/testdb
     driverClassName: org.postgresql.Driver
-    username: postgres
-    password: yourpassword
+    username: admin
+    password: admin
     hikari:
       allow-pool-suspension: false
   jpa:
