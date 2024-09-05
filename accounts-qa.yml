@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: "accounts"
   datasource:
     url: jdbc:postgresql://localhost:5433/testdb
     driverClassName: org.postgresql.Driver
