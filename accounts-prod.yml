@@ -1,24 +1,3 @@
-spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5433/testdb1
-    driverClassName: org.postgresql.Driver
-    username: admin
-    password: admin
-    hikari:
-      allow-pool-suspension: false
-  jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-    properties:
-      hibernate.boot.allow_jdbc_metadata_access: false
-    open-in-view: false
-  sql:
-    init:
-      schema-locations: classpath:schema-postgres.sql
-
-
 build:
   version: "1.0"
 
