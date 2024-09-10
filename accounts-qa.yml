@@ -1,33 +1,11 @@
-spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5433/testdb1
-    driverClassName: org.postgresql.Driver
-    username: admin
-    password: admin
-    hikari:
-      allow-pool-suspension: false
-  jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-    hibernate:
-      ddl-auto: none
-    show-sql: true
-    properties:
-      hibernate.boot.allow_jdbc_metadata_access: false
-    open-in-view: false
-  sql:
-    init:
-      mode: never
-      schema-locations: classpath:schema-postgres.sql
-
-
 build:
-  version: "1.0"
+  version: "2.0"
 
 accounts:
-  message: "Welcome to EazyBank accounts related prod APIs "
+  message: "Welcome to EazyBank accounts related QA APIs "
   contactDetails:
-    name: "Reine Aishwarya - Product Owner"
-    email: "aishwarya@eazybank.com"
+    name: "Smitha Ray - QA Lead"
+    email: "smitha@eazybank.com"
   onCallSupport:
-    - (453) 392-4829
-    - (236) 203-0384
+    - (666) 265-3765
+    - (666) 734-8371
